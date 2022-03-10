@@ -1,6 +1,9 @@
 {
-    "name": "connected-ui-edge",
-    "version": "1.0.0",
+    "name": "@alanbrowndesign/connected-ui-edge",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/alanbrowndesign"
+    },
+    "version": "0.0.13",
     "license": "MIT",
     "scripts": {
         "rollup": "rollup -c"
