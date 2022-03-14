@@ -1,21 +1,15 @@
 {
-    "name": "@alanbrowndesign/connected-ui-edge",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/alanbrowndesign"
-    },
-    "version": "0.0.13",
+    "name": "connected-ui-edge",
+    "version": "0.0.16",
     "license": "MIT",
     "scripts": {
         "rollup": "rollup -c",
         "watch": "rollup -c -w",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
-    },
-    "peerDependencies": {
-        "react": "^17.0.2"
+        "build-storybook": "build-storybook",
+        "publish": "npm publish"
     },
     "devDependencies": {
-        "@stitches/react": "^1.2.7",
         "@babel/core": "^7.16.0",
         "@babel/preset-env": "^7.16.4",
         "@babel/preset-react": "^7.16.0",
@@ -23,6 +17,7 @@
         "@rollup/plugin-commonjs": "^21.0.1",
         "@rollup/plugin-node-resolve": "^13.0.6",
         "@rollup/plugin-typescript": "^8.3.0",
+        "@stitches/react": "^1.2.7",
         "@storybook/addon-actions": "^6.3.12",
         "@storybook/addon-essentials": "^6.3.12",
         "@storybook/addon-links": "^6.3.12",
@@ -32,16 +27,17 @@
         "@storybook/react": "^6.3.12",
         "@testing-library/react": "^12.1.2",
         "@types/jest": "^27.0.2",
-        "@types/react": "^17.0.34",
+        "@types/react": "^17.0.40",
         "babel-jest": "^27.3.1",
         "babel-loader": "^8.2.3",
         "html-webpack-plugin": "^5.5.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.3.1",
+        "react": "^17.0.2",
         "rollup": "^2.60.0",
         "rollup-plugin-dts": "^4.0.1",
         "style-loader": "^3.3.1",
-        "typescript": "^4.4.4"
+        "typescript": "^4.6.2"
     },
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",

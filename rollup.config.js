@@ -26,6 +26,8 @@ export default [
             typescript({ tsconfig: "./tsconfig.json" }),
         ],
     },
+
+    // Types:
     {
         input: "dist/esm/types/index.d.ts",
         output: [{ file: "dist/index.d.ts", format: "esm" }],
