@@ -1,12 +1,12 @@
 import React from "react";
-import { styled } from "../../styles/stitches.config";
+import { styled } from "@/styles/stitches.config";
 
 export interface ButtonProps {
     label: string;
 }
 
 const StyledButton = styled("button", {
-    background: "orange",
+    background: "red",
     typeStyle: "footnote",
     borderRadius: 20,
     padding: 10,

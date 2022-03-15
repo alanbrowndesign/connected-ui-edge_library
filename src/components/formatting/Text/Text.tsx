@@ -1,43 +1,7 @@
 import React from "react";
-
-import {
-    stitches,
-    styled,
-    typeStyleNames,
-} from "../../../styles/stitches.config";
-
-const tokens = stitches.config.theme;
-
-const getType = stitches.config.utils.typeStyle;
-
-const getTypeStyles = () => {
-    // Empty object
-    let newStyle: any = {};
-
-    typeStyleNames.map((name, i) => {
-        newStyle[name] = getType(name);
-    });
-
-    return newStyle;
-};
-
-getTypeStyles();
-
-const getTokens = (tokenObject: object, cssProperty: string = "color") => {
-    // Get the colour names array
-    const tokenNames = Object.keys(tokenObject);
-
-    // Empty object
-    let newTokens: any = {};
-
-    // Loop over the array to build new CSS
-    tokenNames.map((name, i) => {
-        newTokens[name] = {};
-        newTokens[name][cssProperty] = `$${name}`;
-    });
-
-    return newTokens;
-};
+import { theme, styled } from "@/styles/stitches.config";
+import { getTokens } from "@/utils/getTokens";
+import { getTypeStyles } from "@/utils/getTypeStyles";
 
 const StyledText = styled("div", {
     variants: {
@@ -45,27 +9,58 @@ const StyledText = styled("div", {
             ...getTypeStyles(),
         },
         color: {
-            ...getTokens(tokens.colors, "color"),
+            ...getTokens(theme.colors, "color"),
         },
         leading: {
-            ...getTokens(tokens.lineHeights, "lineHeight"),
+            ...getTokens(theme.lineHeights, "lineHeight"),
         },
         weight: {
-            ...getTokens(tokens.fontWeights, "fontWeight"),
+            ...getTokens(theme.fontWeights, "fontWeight"),
         },
         size: {
-            ...getTokens(tokens.fontSizes, "fontSize"),
+            ...getTokens(theme.fontSizes, "fontSize"),
         },
         font: {
-            ...getTokens(tokens.fonts, "fontFamily"),
+            ...getTokens(theme.fonts, "fontFamily"),
         },
+    },
+    defaultVariants: {
+        typeStyle: "body",
     },
 });
 
-export const Text = (props: any) => {
-    const { children, typeStyle, tag, color, leading, weight, size, font } =
-        props;
+type TextProps = {
+    children: React.ReactNode;
+    typeStyle?:
+        | "hero"
+        | "headline"
+        | "title1"
+        | "title2"
+        | "title3"
+        | "heading"
+        | "subhead"
+        | "body"
+        | "footnote"
+        | "caption"
+        | "micro";
+    tag?: any;
+    color?: string;
+    leading?: "tighter" | "tight" | "normal" | "wide";
+    weight?: "standard" | "heavy";
+    size?: number;
+    font?: "display" | "text";
+};
 
+export const Text = ({
+    children,
+    typeStyle,
+    tag,
+    color,
+    leading,
+    weight,
+    size,
+    font,
+}: TextProps) => {
     return (
         <StyledText
             typeStyle={typeStyle}
@@ -79,8 +74,4 @@ export const Text = (props: any) => {
             {children}
         </StyledText>
     );
-};
-
-Text.defaultProps = {
-    typeStyle: "body",
 };
