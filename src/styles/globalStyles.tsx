@@ -5,6 +5,10 @@ export const globalStyles = globalCss({
         lineHeight: "var(--lineHeights-normal)",
     },
 
+    "h1, h2, h3, h4, h5, h6": {
+        margin: 0,
+    },
+
     ":root": {
         /* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1440,16,1.2,7,3,768&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 

@@ -1,13 +1,14 @@
 {
     "name": "connected-ui-edge",
-    "version": "0.0.17",
+    "version": "0.0.21",
     "license": "MIT",
     "scripts": {
         "rollup": "rollup -c",
         "watch": "rollup -c -w",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "publish": "npm publish"
+        "publish": "npm publish",
+        "chromatic": "npx chromatic --project-token=15f86ff3bb86"
     },
     "devDependencies": {
         "@babel/core": "^7.16.0",
@@ -30,6 +31,7 @@
         "@types/react": "^17.0.40",
         "babel-jest": "^27.3.1",
         "babel-loader": "^8.2.3",
+        "chromatic": "^6.5.3",
         "html-webpack-plugin": "^5.5.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.3.1",
