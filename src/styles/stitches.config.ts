@@ -3,17 +3,17 @@ import { createStitches, defaultThemeMap } from "@stitches/react";
 import type * as Stitches from "@stitches/react";
 
 type TypeStyles =
-    | "$hero"
-    | "$headline"
-    | "$title1"
-    | "$title2"
-    | "$title3"
-    | "$heading"
-    | "$subhead"
-    | "$body"
-    | "$footnote"
-    | "$caption"
-    | "$micro";
+    | "hero"
+    | "headline"
+    | "title1"
+    | "title2"
+    | "title3"
+    | "heading"
+    | "subhead"
+    | "body"
+    | "footnote"
+    | "caption"
+    | "micro";
 
 export const { styled, css, theme, globalCss, config, keyframes } =
     createStitches({
@@ -191,7 +191,7 @@ export const { styled, css, theme, globalCss, config, keyframes } =
                 },
             }),
             typeStyle: (styleName: TypeStyles) =>
-                styleName === "$hero"
+                styleName === "hero"
                     ? {
                           fontSize: "var(--fontSizes-7)",
                           fontWeight: "var(--fontWeights-heavy)",
@@ -199,7 +199,7 @@ export const { styled, css, theme, globalCss, config, keyframes } =
                           lineHeight: "var(--lineHeights-tight)",
                           letterSpacing: "var(--letterSpacings-tighter)",
                       }
-                    : styleName === "$headline"
+                    : styleName === "headline"
                     ? {
                           fontSize: "var(--fontSizes-6)",
                           lineHeight: "var(--lineHeights-tight)",
@@ -207,7 +207,7 @@ export const { styled, css, theme, globalCss, config, keyframes } =
                           fontWeight: "var(--fontWeights-heavy)",
                           letterSpacing: "var(--letterSpacings-tighter)",
                       }
-                    : styleName === "$title1"
+                    : styleName === "title1"
                     ? {
                           fontSize: "var(--fontSizes-5)",
                           lineHeight: "var(--lineHeights-tight)",
@@ -215,7 +215,7 @@ export const { styled, css, theme, globalCss, config, keyframes } =
                           fontWeight: "var(--fontWeights-heavy)",
                           letterSpacing: "var(--letterSpacings-tight)",
                       }
-                    : styleName === "$title2"
+                    : styleName === "title2"
                     ? {
                           fontSize: "var(--fontSizes-4)",
                           lineHeight: "var(--lineHeights-tight)",
@@ -223,7 +223,7 @@ export const { styled, css, theme, globalCss, config, keyframes } =
                           fontWeight: "var(--fontWeights-heavy)",
                           letterSpacing: "var(--letterSpacings-tight)",
                       }
-                    : styleName === "$title3"
+                    : styleName === "title3"
                     ? {
                           fontSize: "var(--fontSizes-3)",
                           lineHeight: "var(--lineHeights-tight)",
@@ -231,7 +231,7 @@ export const { styled, css, theme, globalCss, config, keyframes } =
                           fontWeight: "var(--fontWeights-heavy)",
                           letterSpacing: "var(--letterSpacings-tight)",
                       }
-                    : styleName === "$heading"
+                    : styleName === "heading"
                     ? {
                           fontSize: "var(--fontSizes-2)",
                           lineHeight: "var(--lineHeights-tight)",
@@ -239,31 +239,31 @@ export const { styled, css, theme, globalCss, config, keyframes } =
                           fontWeight: "var(--fontWeights-heavy)",
                           letterSpacing: "var(--letterSpacings-tight)",
                       }
-                    : styleName === "$subhead"
+                    : styleName === "subhead"
                     ? {
                           fontSize: "var(--fontSizes-1)",
                           fontFamily: "var(--fonts-display)",
                           fontWeight: "var(--fontWeights-heavy)",
                           letterSpacing: "var(--letterSpacings-normal)",
                       }
-                    : styleName === "$body"
+                    : styleName === "body"
                     ? {
                           fontSize: "var(--fontSizes-0)",
                           fontFamily: "var(--fonts-text)",
                           letterSpacing: "var(--letterSpacings-normal)",
                       }
-                    : styleName === "$footnote"
+                    : styleName === "footnote"
                     ? {
                           fontSize: "var(--fontSizes--1)",
                           fontFamily: "var(--fonts-text)",
                           letterSpacing: "var(--letterSpacings-wide)",
                       }
-                    : styleName === "$caption"
+                    : styleName === "caption"
                     ? {
                           fontSize: "var(--fontSizes--2)",
                           fontFamily: "var(--fonts-text)",
                       }
-                    : styleName === "$micro"
+                    : styleName === "micro"
                     ? {
                           fontSize: "var(--fontSizes--3)",
                           fontFamily: "var(--fonts-text)",
