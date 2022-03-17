@@ -1,5 +1,5 @@
 import React from "react";
-import { globalStyles } from "../src/styles/globalStyles";
+import { stitchesStyles } from "../src/styles/globalStyles";
 
 export const parameters = {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -13,7 +13,7 @@ export const parameters = {
 
 export const decorators = [
     (Story) => {
-        globalStyles();
+        stitchesStyles();
         return (
             <div>
                 <Story />

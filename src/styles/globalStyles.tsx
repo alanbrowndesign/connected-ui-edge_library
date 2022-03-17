@@ -1,12 +1,9 @@
 import { globalCss } from "./stitches.config";
 
-export const globalStyles = globalCss({
+const customStyles = {
     body: {
+        fontSmoothing: "antialiased",
         lineHeight: "var(--lineHeights-normal)",
-    },
-
-    "h1, h2, h3, h4, h5, h6": {
-        margin: 0,
     },
 
     ":root": {
@@ -23,5 +20,16 @@ export const globalStyles = globalCss({
         "--step-5": "clamp(1.80rem, calc(1.61rem + 0.98vw), 2.49rem)",
         "--step-6": "clamp(2.03rem, calc(1.75rem + 1.37vw), 2.99rem)",
         "--step-7": "clamp(2.28rem, calc(1.91rem + 1.86vw), 3.58rem)",
+
+        // Breakpoints:
+        "--media-xs": "0",
+        "--media-sm": "48rem", // 768
+        "--media-md": "64rem", // 1024
+        "--media-lg": "80rem", // 1280
+        "--media-xl": "90rem", // 1440
     },
-});
+};
+
+export const stitchesStyles = () => {
+    globalCss(customStyles)();
+};
