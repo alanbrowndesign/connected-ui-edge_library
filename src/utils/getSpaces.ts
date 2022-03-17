@@ -1,18 +1,18 @@
-import { theme } from '@/styles/stitches.config';
+import { theme } from "~/src/styles/stitches.config";
 
 export const getSpaces = () => {
-  const obj = theme.space;
+    const obj = theme.space;
 
-  // get array
-  const spaceNames = Object.keys(obj);
+    // get array
+    const spaceNames = Object.keys(obj);
 
-  // empty object
-  let newSpaces: any = {};
+    // empty object
+    let newSpaces: any = {};
 
-  spaceNames.map((name: any, i) => {
-    newSpaces[name] = {};
-    newSpaces[name]['& > * ~ *'] = { marginTop: `$${name}` };
-  });
+    spaceNames.map((name: any, i) => {
+        newSpaces[name] = {};
+        newSpaces[name]["& > * ~ *"] = { marginTop: `$${name}` };
+    });
 
-  return newSpaces;
+    return newSpaces;
 };

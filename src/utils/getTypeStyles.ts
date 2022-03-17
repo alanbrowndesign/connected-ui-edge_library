@@ -1,4 +1,4 @@
-import { config } from "@/styles/stitches.config";
+import { config } from "~/src/styles/stitches.config";
 
 const typeStyleNames = [
     "hero",

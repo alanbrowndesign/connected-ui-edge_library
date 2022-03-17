@@ -1,7 +1,7 @@
 import React from "react";
-import { theme, styled } from "@/styles/stitches.config";
-import { getTokens } from "@/utils/getTokens";
-import { getTypeStyles } from "@/utils/getTypeStyles";
+import { theme, styled } from "~/src/styles/stitches.config";
+import { getTokens } from "~/src/utils/getTokens";
+import { getTypeStyles } from "~/src/utils/getTypeStyles";
 
 const StyledText = styled("div", {
     variants: {
