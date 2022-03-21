@@ -1,4 +1,3 @@
-import React from "react";
 import { theme, styled } from "@/styles/stitches.config";
 import { getTokens } from "@/utils/getTokens";
 import { getTypeStyles } from "@/utils/getTypeStyles";

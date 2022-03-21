@@ -6,15 +6,15 @@ const TypeTestText = "The Quick Brown Fox";
 export default {
     title: "Components/Formatting/Text",
     component: Text,
-    argTypes: {
-        children: {
-            description: "overwritten description",
-            control: {
-                type: "text",
-                defaultValue: "cunzho",
-            },
-        },
-    },
+    // argTypes: {
+    //     children: {
+    //         description: "overwritten description",
+    //         control: {
+    //             type: "text",
+    //             defaultValue: "cunzho",
+    //         },
+    //     },
+    // },
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -26,6 +26,7 @@ const Template: ComponentStory<typeof Text> = (args) => (
         color={args.color}
         font={args.font}
         weight={args.weight}
+        size={args.size}
     >
         {args.children}
     </Text>

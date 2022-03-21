@@ -13,7 +13,7 @@
         },
 
         // Added
-        "jsx": "react",
+        "jsx": "react-jsx",
         "module": "ESNext",
         "declaration": true,
         "declarationDir": "types",
