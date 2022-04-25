@@ -1,5 +1,6 @@
 import { styled } from "@/styles/stitches.config";
 import { motion } from "framer-motion";
+import { Text } from "@/components/formatting";
 
 const StyledButton = styled(motion.button, {
     // Reset

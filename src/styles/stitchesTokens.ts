@@ -1,5 +1,30 @@
 import { defaultThemeMap } from "@stitches/react";
 
+import {
+    slate,
+    slateDark,
+    slateA,
+    amber,
+    amberDark,
+    red,
+    redDark,
+    plum,
+    plumDark,
+    indigo,
+    indigoDark,
+    blue,
+    blueDark,
+    sky,
+    skyDark,
+    teal,
+    tealDark,
+    green,
+    greenDark,
+    orange,
+    orangeDark,
+    slateDarkA,
+} from "@radix-ui/colors";
+
 export const stitchesThemeMap = {
     // Map these properties to the `space` scale
     ...defaultThemeMap,
@@ -203,7 +228,35 @@ export const stitchesTheme = {
         primaryBrand: "#1C66DE",
         primaryMidnight: "#030063",
 
+        // Neutrals
         white: "#ffffff",
+        black: "#000000",
+        ...slate,
+        ...slateA,
+
+        // Accent palette:
+        // Note: These colours wont change per theme
+        accentAmber: amber.amber9,
+        accentOrange: orangeDark.orange10,
+        accentRed: red.red9,
+        accentPlum: plumDark.plum9,
+        accentBlue: blueDark.blue8,
+        accentSky: sky.sky8,
+        accentTeal: teal.teal9,
+        accentGreen: green.green8,
+
+        // Extended palette:
+        ...amber,
+        ...red,
+        ...plum,
+        ...indigo,
+        ...blue,
+        ...sky,
+        ...teal,
+        ...green,
+        ...orange,
+
+        // ! Deprecated:
         neutral100: "#FFFFFF",
         neutral200: "#F4F8FC",
         neutral300: "#D5DDE5",
@@ -220,15 +273,12 @@ export const stitchesTheme = {
         midnight700: "#020042",
         midnight900: "#010029",
 
-        accentOrange: "#EAA51A",
         accentOrangeDark: "#E68B18",
         accentPink: "#EA5165",
         accentPurple: "#682383",
         accentNavy: "#003D6A",
         accentRoyal: "#005695",
         accentCyan: "#00AADB",
-        accentSky: "#8DD3F6",
-        accentTeal: "#00B59F",
         accentLime: "#67BA8A",
     },
     lineHeights: {
@@ -267,4 +317,25 @@ export const stitchesMedia = {
     xl1: "var(--media-xl)", // 1440
     xl2: "(min-width: 1600px)",
     xl3: "(min-width: 1920px)",
+};
+
+export const stitchesDarkColors = {
+    colors: {
+        // Neutrals
+        white: "#000000",
+        black: "#ffffff",
+        ...slateDark,
+        ...slateDarkA,
+
+        // Extended palette:
+        ...amberDark,
+        ...redDark,
+        ...plumDark,
+        ...indigoDark,
+        ...blueDark,
+        ...skyDark,
+        ...tealDark,
+        ...greenDark,
+        ...orangeDark,
+    },
 };

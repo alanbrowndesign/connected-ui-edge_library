@@ -1,6 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Button } from "./Button";
+import { darkTheme } from "@/styles/stitches.config";
 const TypeTestText = "The Quick Brown Fox";
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -10,9 +11,11 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Button> = (args) => (
-    <Button type={args.type} onClick={args.onClick}>
-        {args.children}
-    </Button>
+    <div className={darkTheme}>
+        <Button type={args.type} onClick={args.onClick}>
+            {args.children}
+        </Button>
+    </div>
 );
 
 export const Primary = Template.bind({});
