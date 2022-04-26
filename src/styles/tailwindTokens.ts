@@ -302,6 +302,37 @@ export const twTheme = {
         8: "4rem", // 64px
         9: "4.5rem", // 72px
         10: "10rem", // 80px
+
+        // base scale
+        "5xs": "var(--space-5xs)", // 4px
+        "4xs": "var(--space-4xs)", // 8px
+        "3xs": "var(--space-3xs)", // 12px
+        "2xs": "var(--space-2xs)", // 16px
+        xs: "var(--space-xs)", // 24px
+        s: "var(--space-s)", // 32px
+        m: "var(--space-m)", // 40px
+        l: "var(--space-l)", // 48px
+        xl: "var(--space-xl)", // 56px
+        "2xl": "var(--space-2xl)", // 64px
+        "3xl": "var(--space-3xl)", // 72px
+        "4xl": "var(--space-4xl)", // 80px
+        "5xl": "var(--space-5xl)", // 88px
+        "6xl": "var(--space-6xl)", // 96px
+
+        // One-up
+        "5xs-4xs": "var(--space-5xs-4xs)", // 4px -> 8px
+        "4xs-3xs": "var(--space-4xs-3xs)", // 8px -> 12px
+        "3xs-2xs": "var(--space-3xs-2xs)", // 12px -> 16px
+        "2xs-xs": "var(--space-2xs-xs)", // 16px -> 24px
+        "xs-s": "var(--space-xs-s)", // 24px -> 32px
+        "s-m": "var(--space-s-m)", // 32px -> 40px
+        "m-l": "var(--space-m-l)", // 40px -> 48px
+        "l-xl": "var(--space-l-xl)", // 48px -> 56px
+        "xl-2xl": "var(--space-xl-2xl)", // 56px -> 64px
+        "2xl-3xl": "var(--space-2xl-3xl)", // 64px -> 72px
+        "3xl-4xl": "var(--space-3xl-4xl)", // 72px -> 80px
+        "4xl-5xl": "var(--space-4xl-5xl)", // 80px -> 88px
+        "5xl-6xl": "var(--space-5xl-6xl)", // 88px -> 96px
     },
     screens: {
         xs: "0",

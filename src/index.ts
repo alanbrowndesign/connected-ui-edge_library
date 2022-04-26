@@ -8,6 +8,7 @@ export {
     stitchesUtils,
     stitchesTheme,
     stitchesThemeMap,
+    stitchesDarkColors,
 } from "./styles/stitchesTokens";
 
 export { twTheme, twTypeStyles } from "./styles/tailwindTokens";
