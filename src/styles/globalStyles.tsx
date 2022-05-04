@@ -14,11 +14,14 @@ const customStitchesStyles = {
         fontFamily: "var(--fonts-text)",
         lineHeight: "var(--lineHeights-normal)",
         margin: 0,
+        color: "$slate11",
+        background: "$slate3",
     },
 
     // reset type
-    "h1, h2, h3, h4, h5, h6": {
+    "h1, h2, h3, h4, h5, h6, p": {
         margin: 0,
+        color: "$slate11",
     },
 };
 

@@ -16,13 +16,13 @@ const StyledContainer = styled("div", {
                 paddingInline: 0,
             },
             tight: {
-                paddingInline: "$2",
+                paddingInline: "$space$xs",
             },
             normal: {
-                paddingInline: "$4",
+                paddingInline: "$space$s",
             },
             loose: {
-                paddingInline: "$6",
+                paddingInline: "$space$m",
             },
         },
     },

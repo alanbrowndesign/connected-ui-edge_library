@@ -257,8 +257,10 @@ export const stitchesTheme = {
         5: "0px 12px 12px rgba(0, 0, 0, 0.18)",
     },
     colors: {
-        primaryBrand: "#1C66DE",
-        primaryMidnight: "#030063",
+        // Brand colours:
+        // Note: These colours wont change per theme
+        primaryBlue: "#1C66DE",
+        primaryIndigo: "#030063",
 
         // Neutrals
         white: "#ffffff",
@@ -289,6 +291,9 @@ export const stitchesTheme = {
         ...orange,
 
         // !! Deprecated:
+        primaryBrand: "#1C66DE",
+        primaryMidnight: "#030063",
+
         neutral100: "#FFFFFF",
         neutral200: "#F4F8FC",
         neutral300: "#D5DDE5",

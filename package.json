@@ -1,13 +1,13 @@
 {
     "name": "connected-ui-edge",
-    "version": "0.0.27",
+    "version": "0.0.30",
     "license": "MIT",
     "scripts": {
         "rollup": "rollup -c && yalc push",
         "watch": "rollup -c -w",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "chromatic": "npx chromatic --project-token=15f86ff3bb86"
+        "chromatic": "npx chromatic --project-token=90459e240b8a"
     },
     "peerDependencies": {
         "framer-motion": "^6.2.8",

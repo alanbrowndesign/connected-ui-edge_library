@@ -1,4 +1,4 @@
-import { styled } from "@/styles/stitches.config";
+import { styled, darkTheme } from "@/styles/stitches.config";
 import { motion } from "framer-motion";
 import { Text } from "@/components/formatting";
 
@@ -10,7 +10,7 @@ const StyledButton = styled(motion.button, {
     typeStyle: "body",
     fontFamily: "$display",
     fontWeight: "$heavy",
-    color: "$white",
+    color: "white",
     paddingInline: "$2",
     paddingBlock: "$1",
     position: "relative",
@@ -38,6 +38,9 @@ const StyledButton = styled(motion.button, {
                 "&::after": {
                     backgroundColor: "$primaryBrand",
                     borderRadius: "$sm",
+                    [`.${darkTheme} &`]: {
+                        background: "$red12",
+                    },
                 },
             },
             secondary: {
@@ -62,19 +65,21 @@ type ButtonProps = {
 export const Button = (props: ButtonProps) => {
     const { type, children, onClick } = props;
     return (
-        <StyledButton
-            type={type}
-            // @ts-expect-error
-            onClick={onClick}
-            whileHover={{
-                scale: 1.05,
-            }}
-            whileTap={{
-                scale: 0.975,
-            }}
-        >
-            <div className="button-inner">{children}</div>
-        </StyledButton>
+        <>
+            <StyledButton
+                type={type}
+                // @ts-expect-error
+                onClick={onClick}
+                whileHover={{
+                    scale: 1.05,
+                }}
+                whileTap={{
+                    scale: 0.975,
+                }}
+            >
+                <div className="button-inner">{children}</div>
+            </StyledButton>
+        </>
     );
 };
 
