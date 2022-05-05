@@ -1,6 +1,6 @@
 {
     "name": "connected-ui-edge",
-    "version": "0.0.30",
+    "version": "0.0.31",
     "license": "MIT",
     "scripts": {
         "rollup": "rollup -c && yalc push",

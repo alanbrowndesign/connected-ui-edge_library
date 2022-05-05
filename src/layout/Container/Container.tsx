@@ -44,6 +44,7 @@ type ContainerProps = {
     gap?: number;
     sidePadding?: "none" | "tight" | "normal" | "loose";
     children: React.ReactNode;
+    css?: any;
 };
 
 export const Container = ({
@@ -51,9 +52,17 @@ export const Container = ({
     gap,
     sidePadding,
     children,
+    css,
+    ...rest
 }: ContainerProps) => {
     return (
-        <StyledContainer width={width} gap={gap} sidePadding={sidePadding}>
+        <StyledContainer
+            width={width}
+            gap={gap}
+            sidePadding={sidePadding}
+            {...rest}
+            css={{ ...css }}
+        >
             {children}
         </StyledContainer>
     );
